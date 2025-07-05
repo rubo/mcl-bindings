@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="Benchmarks/Benchmarks.csproj" Id="a1792d0b-dec8-4818-9438-e33279cda30a" />
+  <Project Path="Nethermind.MclBindings.Tests/Nethermind.MclBindings.Tests.csproj" Id="7594bb8d-f92c-4b4b-b5b2-bba2efe3b785" />
+  <Project Path="Nethermind.MclBindings/Nethermind.MclBindings.csproj" />
+  <Project Path="Test/Test.csproj" Id="0758d82e-866a-4980-8cb9-5a973d2d1e58" />
+</Solution>

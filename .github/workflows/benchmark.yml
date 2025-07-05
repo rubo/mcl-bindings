@@ -1,0 +1,23 @@
+name: Benchmark
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    name: Run benchmarks
+    needs: build-linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+
+      - name: Benchmark
+        working-directory: src/Benchmarks
+        run: |
+          dotnet run -c release
