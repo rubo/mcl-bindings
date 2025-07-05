@@ -30,7 +30,7 @@ public class Comparison
     {
         var PairSize = 192;
 
-        for (var j = 0; j < 10000; j++)
+        for (var j = 0; j < 1000; j++)
         {
             Span<byte> input = new byte[_input.Length];
             ReadOnlySpan<byte> inputDataSpan = _input.AsSpan();
@@ -56,7 +56,7 @@ public class Comparison
     [Benchmark(Description = "mcl")]
     public void RunMcl()
     {
-        for (var j = 0; j < 10000; j++)
+        for (var j = 0; j < 1000; j++)
         {
 
             Span<byte> input = new byte[_input.Length];
